@@ -27,6 +27,9 @@
 
 import numpy as np
 from numpy import argmax
+import gym
+
+
 
 
 def unpack_tuple(tuple):
