@@ -95,7 +95,13 @@ matrix = np.zeros((3, 3))
 # set goal
 matrix[1][1] = 10
 
-print(repeated_bellman(matrix, empty, 0.9, 0.01, 0))
+matrix = (repeated_bellman(matrix, empty, 0.9, 0.003, 0))
+
+# display nice matrix with 2 decimals
+np.set_printoptions(formatter={'float': lambda x: "{0:0.2f}".format(x)})
+print(matrix)
+
+
 
 
 
