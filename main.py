@@ -27,13 +27,6 @@
 
 import numpy as np
 from numpy import argmax
-import gym
-
-
-
-
-def unpack_tuple(tuple):
-    return tuple[0], tuple[1]
 
 
 def expected_value(currentmatrix, formermatrix, i, j, newi, newj, gamma):
@@ -103,6 +96,12 @@ matrix = np.zeros((3, 3))
 matrix[1][1] = 10
 
 print(repeated_bellman(matrix, empty, 0.9, 0.01, 0))
+
+
+
+
+
+
 
 
 
